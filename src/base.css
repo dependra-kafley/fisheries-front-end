@@ -482,3 +482,116 @@ button.close:focus {
     color: #FFF;
     background-color: #000000EE;
 }*/
+
+/*style for the Login*/
+
+.login-form {
+	width: 360px;
+	height: 500px;
+	
+	padding: ;
+	border-radius: 10px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.login-form h1 {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.inputb {
+	border-bottom: 2px solid #adadad;
+	position: relative;
+	margin: 32px 0px;
+}
+
+.inputb label {
+	display: none;
+}
+
+.inputb .forminput {
+	font-size: 15px;
+	color: #333;
+	width: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0px 5px;
+	height: 40px;
+}
+
+.inputb span::before {
+	content: attr(data-placeholder-1);
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	color: #adadad;
+	transform: translateY(-50%);
+	z-index: -1;
+	transition: 0.5s;
+}
+
+.inputb span::after {
+	content: '';
+	width: 0%;
+	height: 2px;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	background: linear-gradient(120deg, #3498db, #8e44ad);
+	transition: 0.5s;
+}
+
+.focus + span::before {
+	content: attr(data-placeholder-2);
+	top: -5px;
+	font-size: 11px;
+	color: #1E71A9;
+	font-weight: 500;
+}
+
+.focus + span::after {
+	width: 100%;
+}
+
+.loginbtn {
+	display: block;
+	width: 100%;
+	height: 50px;
+	border: none;
+	background: linear-gradient(120deg, #3498db, #8e44ad, #3498db);
+	background-size: 200%;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	transition: 0.5s;
+	font-size: 16px;
+}
+
+.loginbtn:hover {
+	background-position: right;
+}
+
+.bottom-text {
+	margin-top: 60px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.bottom-text a {
+	color: #1A6393;
+	font-weight: 500;
+}
+
+.bottom-text a:hover {
+	text-decoration: underline;
+}
+
+.bottom-text .forgotpwd,
+.bottom-text .signup {
+	display: block;
+	color: #6E6E6E;
+}
