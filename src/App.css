@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.test{
+  color: brown;
+}
+
+a{
+  text-decoration: none !important;
+  text-align: center;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: aliceblue !important;
+}
